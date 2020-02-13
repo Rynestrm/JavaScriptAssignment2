@@ -6,20 +6,15 @@ let flower = document.querySelectorAll("ul li img");
 let topFlower = document.querySelector("section figure img");
 let fig = document.querySelector("figcaption");
 
-
 // Functions
 function largeImage(e) {
   // targeting the event of what is clicked
   let replaceImage = e.target.src;
   let replaceAlt = e.target.alt;
-  console.log(replaceAlt);
   // replacing the word small with the word large in the src path
   let replaced = replaceImage.replace("small", "large");
-  let altReplaced = replaceAlt.replace("alt", "alt");
-  console.log(replaceAlt);
   topFlower.src = replaced;
   fig.innerHTML = replaceAlt;
-  // console.log(topFlower);
 }
 
 // on click events
